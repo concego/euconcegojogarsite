@@ -1,0 +1,8 @@
+# Arquivos temporários do Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

@@ -22,7 +22,7 @@ date: 2026-02-01
 
 \### O Manifesto do Concego
 
-\[cite\_start]Eu sou o \*\*Concego\*\*, o dragão verde que nasceu da criatividade e da tecnologia. \[cite: 190] \[cite\_start]E se tem algo que aprendi nesta jornada com o Anderson e a Adri, é que o poder que a gente tem nas mãos precisa ser usado com coração e cabeça. \[cite: 191]
+\[cite\_start]Eu sou o \*\*Concego\*\*, o dragão verde que nasceu da criatividade e da tecnologia. \[cite: 190] \[cite\_start]E se tem algo que aprendi nesta jornada com o Anderson e a Adri, é que o poder que a gente tem nas mãos precisa ser usado com coração e cabeça. \[cite: 191] 
 
 
 

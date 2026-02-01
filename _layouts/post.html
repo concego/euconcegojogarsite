@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Euconcegojogar</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+    <a href="#conteudo-post" class="skip-link">Pular para o texto do post</a>
+
+    <header>
+        <p><a href="{{ '/' | relative_url }}">Voltar para a Página Inicial</a></p>
+        <h1>{{ page.title }}</h1>
+        <p>Publicado em: <time>{{ page.date | date: "%d/%m/%Y" }}</time></p>
+    </header>
+
+    <main id="conteudo-post" tabindex="-1">
+        <article>
+            {{ content }}
+        </article>
+    </main>
+
+    <hr aria-hidden="true">
+
+    <footer>
+        <section aria-label="Sobre os autores">
+            [cite_start]<p><strong>Euconcegojogar:</strong> Acessibilidade e inclusão de gamers para gamers. [cite: 298, 310]</p>
+            [cite_start]<p>Projeto fundado por <strong>Anderson Carvalho</strong> e <strong>Adri Lima</strong>. [cite: 326, 329, 347, 349]</p>
+            <p>Contatos: <a href="mailto:euconcego@gmail.com">euconcego@gmail.com</a></p>
+        </section>
+        <p><a href="#conteudo-post">Voltar ao topo do texto</a></p>
+    </footer>
+</body>
+</html>
