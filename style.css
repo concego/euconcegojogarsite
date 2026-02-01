@@ -1,0 +1,146 @@
+/* ESTILO GERAL - PROJETO EUCONCEGOJOGAR
+   Foco: Acessibilidade (WCAG), Contraste e Usabilidade.
+*/
+
+:root {
+    /* Cores baseadas na identidade visual e no e-book */
+    --cor-fundo: #ffffff;
+    --cor-texto: #1a1a1a;
+    --cor-primaria: #005a9c; [cite_start]/* Azul-petróleo inspirado na capa do livro [cite: 6] */
+    --cor-secundaria: #008000; [cite_start]/* Verde do mascote Concego [cite: 5, 160] */
+    --cor-destaque: #e67e22;  [cite_start]/* Alaranjado das asas do Concego [cite: 160] */
+    --cor-foco: #ffbf47;     /* Amarelo para alto contraste no foco do teclado */
+    --cor-citacao-fundo: #f4f4f4;
+}
+
+/* Reset básico e tipografia acessível */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fontes sem serifa facilitam a leitura */
+    line-height: 1.8; [cite_start]/* Espaçamento entre linhas maior para melhor legibilidade  */
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+[cite_start]/* Link de Salto (Skip Link) - Fundamental para navegação por teclado  */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 15px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 4px solid var(--cor-foco);
+}
+
+/* Cabeçalho e Identidade */
+header {
+    border-bottom: 4px solid var(--cor-secundaria);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+[cite_start]/* Estilo de Foco Universal (NVDA/Teclado) [cite: 232, 252] */
+a:focus, button:focus, [tabindex]:focus {
+    outline: 5px solid var(--cor-foco);
+    outline-offset: 2px;
+    background-color: var(--cor-texto) !important;
+    color: #ffffff !important;
+}
+
+[cite_start]/* Seções de Conteúdo [cite: 250] */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--cor-secundaria);
+    border-left: 8px solid var(--cor-destaque);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+[cite_start]/* Listas de Serviços e Reconhecimento [cite: 320, 321] */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+[cite_start]/* Citações do E-book "O Game que a Gente Vê" [cite: 7, 301] */
+blockquote {
+    background-color: var(--cor-citacao-fundo);
+    border-left: 10px solid var(--cor-primaria);
+    margin: 30px 0;
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--cor-texto);
+}
+
+[cite_start]/* Footer e Contatos [cite: 295, 332] */
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+footer h2 {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}

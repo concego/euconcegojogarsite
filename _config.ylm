@@ -1,0 +1,26 @@
+# Configurações do Projeto Euconcegojogar
+[cite_start]title: Euconcegojogar [cite: 298]
+[cite_start]email: euconcego@gmail.com [cite: 309]
+[cite_start]description: >- # Acessibilidade e inclusão: de gamers para gamers. [cite: 298, 310, 333]
+  Iniciativa criada por pessoas cegas para promover acessibilidade digital 
+  [cite_start]em jogos, aplicativos e plataformas interativas. [cite: 299, 311, 334]
+
+# Informações dos Fundadores
+author:
+  [cite_start]name: Anderson Carvalho e Adri Lima [cite: 302, 304, 347, 349]
+  [cite_start]bio: Consultores em acessibilidade digital e produtores de conteúdo. [cite: 302, 304, 326, 329]
+
+# Configurações de URL (O GitHub preenche isso automaticamente, mas é bom ter)
+baseurl: "" 
+url: https://concego.github.io
+
+# Configuração de Markdown e Coleções
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+
+# Coleções para organizar o conteúdo
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
